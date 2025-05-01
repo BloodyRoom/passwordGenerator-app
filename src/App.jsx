@@ -3,9 +3,13 @@ import './App.css'
 
 function App() {
   const [password, setPassword] = useState("");
+  const [actions, setActions] = useState({lenght: 10, letters: true, numbers: true, special: true});
 
-  const generate = (length = 8) => {
-    const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+  const generate = (length = actions.lenght) => {
+    const characters = "" +
+      (actions.letters ? 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz' : "") + 
+      (actions.numbers ? "1234567890" : "") + 
+      (actions.special ? "!@#$%^&*()+_-" : "");
     let result = '';
     for (let i = 0; i < length; i++) {
         result += characters.charAt(Math.floor(Math.random() * characters.length));
