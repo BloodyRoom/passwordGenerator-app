@@ -2,7 +2,7 @@
 
 A simple and customizable password generator built with React and Vite. This application allows users to generate secure passwords based on selected criteria.
 
-## ✨ Try [password-generator-app-teal-six.vercel.app](https://password-generator-app-teal-six.vercel.app)
+## ✨ Try [this](https://password-generator-app-teal-six.vercel.app)
 
 ## 💡 Features
 
